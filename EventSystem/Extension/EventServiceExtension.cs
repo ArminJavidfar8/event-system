@@ -1,18 +1,20 @@
-﻿using EventSystem.Abstraction;
+﻿using Services.EventSystem.Abstraction;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace EventSystem.Extension
+namespace Services.EventSystem.Extension
 {
     public enum EventTypes
     {
-        EventTypeExample,
-        OnEnemyDied,
-        OnBoosterUsed,
-        OnScreenTapped
+        None,
+        OnUserClickedForward,
+        OnUserClickedSides,
+        OnUserShot,
+        OnLevelStarted,
+        OnLevelFinished,
+        OnAstroidDestroyed,
+        OnScoreUpdated,
+        OnEnemySpaceshipDestoyed,
+        OnDied,
     }
 
     public static class EventServiceExtension

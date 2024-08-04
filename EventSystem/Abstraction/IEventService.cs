@@ -1,4 +1,6 @@
-﻿namespace EventSystem.Abstraction
+﻿using System;
+
+namespace Services.EventSystem.Abstraction
 {
     public interface IEventService
     {

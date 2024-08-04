@@ -1,24 +1,16 @@
-﻿using EventSystem.Abstraction;
+﻿using Services.EventSystem.Abstraction;
+using System;
+using System.Collections.Generic;
+using UnityEngine.Scripting;
 
-namespace EventSystem.Core
+namespace Services.EventSystem.Core
 {
     internal class EventService : IEventService
     {
         private readonly Dictionary<int, Delegate> _events;
 
-        private static IEventService _eventSystem;
-        public static IEventService Instance
-        {
-            get
-            {
-                if (_eventSystem == null)
-                {
-                    _eventSystem = new EventService();
-                }
-                return _eventSystem;
-            }
-        }
-        private EventService()
+        [Preserve]
+        public EventService()
         {
             _events = new Dictionary<int, Delegate>();
         }
