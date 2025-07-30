@@ -1,0 +1,16 @@
+{
+    "name": "EventService.Extension",
+    "rootNamespace": "",
+    "references": [
+        "GUID:96c520b8f5204a64aa2d696eae797f42"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

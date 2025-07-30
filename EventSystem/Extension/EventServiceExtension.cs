@@ -1,19 +1,18 @@
-﻿using Services.EventSystem.Abstraction;
-using System;
+﻿using System;
+using YekGames.EventService.Abstraction;
 
-namespace Services.EventSystem.Extension
+namespace YekGames.EventService.Extension
 {
+    // Example of an extension to Event System. Developers can create their own specific extension class to manage events in a type-safe and readable manner.
+    
     public enum EventTypes
     {
         None,
         OnUserClickedForward,
-        OnUserClickedSides,
         OnUserShot,
         OnLevelStarted,
         OnLevelFinished,
-        OnAstroidDestroyed,
-        OnScoreUpdated,
-        OnEnemySpaceshipDestoyed,
+        OnScoreChanged,
         OnDied,
     }
 

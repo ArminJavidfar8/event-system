@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Services.EventSystem.Abstraction
+namespace YekGames.EventService.Abstraction
 {
     public interface IEventService
     {

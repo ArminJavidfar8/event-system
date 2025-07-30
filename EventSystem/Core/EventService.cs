@@ -1,15 +1,13 @@
-﻿using Services.EventSystem.Abstraction;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using UnityEngine.Scripting;
+using YekGames.EventService.Abstraction;
 
-namespace Services.EventSystem.Core
+namespace YekGames.EventService.Core
 {
-    internal class EventService : IEventService
+    public class EventService : IEventService
     {
         private readonly Dictionary<int, Delegate> _events;
 
-        [Preserve]
         public EventService()
         {
             _events = new Dictionary<int, Delegate>();
@@ -123,6 +121,7 @@ namespace Services.EventSystem.Core
                 action?.Invoke();
             }
         }
+
         public void BroadcastEvent<T1>(int id, T1 param1)
         {
             if (_events.ContainsKey(id))
